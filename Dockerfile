@@ -12,3 +12,5 @@ EXPOSE 3478
 
 # Commande par défaut pour démarrer le serveur TURN avec le fichier de configuration
 CMD ["turnserver", "-c", "/etc/turnserver.conf", "--no-cli"]
+
+COPY ./turnserver.conf /etc/turnserver.conf
